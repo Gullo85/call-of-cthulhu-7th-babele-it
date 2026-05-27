@@ -2,27 +2,34 @@
   "id": "call-of-cthulhu-7th-babele-it",
   "name": "call-of-cthulhu-7th-babele-it",
   "title": "Call of Cthulhu 7th Babele (Italian)",
-  "description": "Traduzione del sistema di gioco di Call of Cthulhu 7e di HavlockV/CoC7-FoundryVTT in Italiano tramite Babele -  Call of Cthulhu 7th (HavlockV/CoC7-FoundryVTT) Italian translation using Babele",
+  "description": "Traduzione del sistema di gioco di Call of Cthulhu 7e di HavlockV/CoC7-FoundryVTT in Italiano tramite Babele.",
   "version": "0.6.0",
-  "minimumCoreVersion" : "0.7.0",
-  "compatibleCoreVersion":"0.7.9",
-  "author": "Anthony L. Wolf (Mr. Wolf)",
-  "esmodules": ["babele-register.js"],
-  "scripts": [],
-  "styles": [],
-  "dependencies": [
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "authors": [
     {
-      "name": "babele",
-      "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
-      "version": "1.20"
-    },
-    {
-      "name": "CoC7",
-      "type": "system",
-      "version": "0.5.4"
+      "name": "Anthony L. Wolf (Mr. Wolf)"
     }
   ],
-  "packs": [],
+  "esmodules": [
+    "babele-register.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module"
+      }
+    ],
+    "systems": [
+      {
+        "id": "CoC7",
+        "type": "system"
+      }
+    ]
+  },
   "languages": [
     {
       "lang": "it",
@@ -30,9 +37,7 @@
       "path": "lang/it.json"
     }
   ],
-  "system": "CoC7",
-  "systemVersion": "0.5.4",
-  "url": "https://github.com/AnthonyLWolf/call-of-cthulhu-7th-babele-it",
-  "manifest": "https://raw.githubusercontent.com/AnthonyLWolf/call-of-cthulhu-7th-babele-it/master/module.json",
-  "download": "https://github.com/AnthonyLWolf/call-of-cthulhu-7th-babele-it/archive/master.zip"
+  "url": "https://github.com/Gullo85/call-of-cthulhu-7th-babele-it",
+  "manifest": "https://raw.githubusercontent.com/Gullo85/call-of-cthulhu-7th-babele-it/master/module.json",
+  "download": "https://github.com/Gullo85/call-of-cthulhu-7th-babele-it/archive/refs/heads/master.zip"
 }
